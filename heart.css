@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    position: relative;
+}
+
+.heart-container {
+    position: absolute;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    font-size: 30px;
+    color: red;
+    animation: float 5s forwards;
+    opacity: 0;
+}
+
+/* Pink Button Styles */
+.love-button {
+    background-color: #d86ab4; /* Pink color */
+    color: white; /* White text */
+    font-size: 1.5em; /* Larger text */
+    font-weight: bold; /* Make text bold */
+    padding: 15px 30px; /* Padding around the text */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Make it look clickable */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    display: block;
+    margin: 20px auto; /* Center button */
+}
+
+/* Hover effect for the button */
+.love-button:hover {
+    background-color: #ff3385; /* Lighter pink when hovered */
+}
+
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--x-offset), var(--y-offset)) scale(1.5);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,33 @@
+Body and content styles
+body {
+    margin: 0;  /* Remove default margin */
+    padding: 0;  /* Remove default padding */
+    font-family: Arial, sans-serif;  /* Set the font */
+    background-image: url('pink.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;  
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Add some padding for content */
+.container {
+    padding: 20px;
+    color: black;  /* Text color */
+}
+
+/* Image at the bottom of the page */
+#bottom-image {
+    display: block;  /* Ensures the image is treated as a block element */
+    margin-left: auto;  /* Center the image horizontally */
+    margin-right: auto;  /* Center the image horizontally */
+    width: 300px;  /* Medium size width */
+    height: auto;  /* Maintain aspect ratio */
+    position: fixed;  /* Fix the image at the bottom */
+    bottom: 0;  /* Place it at the bottom of the page */
+    left: 50%;  /* Center it horizontally */
+    transform: translateX(-50%);  /* Adjust the image so it's centered */
+    margin-bottom: 30px;  /* Optional margin from the bottom of the page */
+}

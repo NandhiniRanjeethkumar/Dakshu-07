@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page with Bottom Image</title>
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        /* Background and body styles */
+        body {
+            background-color: #ffedf2; /* Soft light pink background */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #e50099; /* Dark pink text */
+            padding: 50px 0;
+            overflow: hidden; /* Prevents hearts and stars from overflowing outside the screen */
+            position: relative;
+
+        }
+
+        /* Main heading style */
+        h1 {
+            font-size: 4em;
+            color: #56023a;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            font-style: italic;
+            animation: glowing;
+        }
+        /* Styling for the paragraph with gradient text */
+        p {
+            font-size: 2em;
+            font-weight: bold;
+            background:none;
+            color: black;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            font-style: italic;
+            animation: glowing;
+        }
+
+        /* Glowing text animation */
+        @keyframes glowing {
+            0% {
+                text-shadow: 0 0 5px #ff77b4, 0 0 10px #ff77b4, 0 0 15px #ff77b4, 0 0 20px #ff3399;
+            }
+            100% {
+                text-shadow: 0 0 10px #ff77b4, 0 0 20px #ff77b4, 0 0 30px #ff77b4, 0 0 40px #ff3399;
+            }
+        }
+
+        /* Heart stickers */
+        .heart {
+            color: red;
+            font-size: 3em;
+            margin-left: 10px;
+        }
+
+        /* Animation for the moving hearts */
+        .heartSticker {
+            position: absolute;
+            font-size: 2em;
+            color: #ff66cc;
+            animation: moveHearts 6s linear infinite;
+        }
+
+        /* Keyframes for moving hearts animation */
+        @keyframes moveHearts {
+            0% {
+                transform: translateX(0) translateY(0);
+            }
+            25% {
+                transform: translateX(150px) translateY(-100px);
+            }
+            50% {
+                transform: translateX(0) translateY(100px);
+            }
+            75% {
+                transform: translateX(-150px) translateY(-150px);
+            }
+            100% {
+                transform: translateX(0) translateY(0);
+            }
+        }
+
+        /* Flying star stickers */
+        .starSticker {
+            position: absolute;
+            font-size: 1.5em;
+            color: #fff;
+            animation: moveStars 10s linear infinite;
+        }
+
+        /* Keyframes for moving stars animation */
+        @keyframes moveStars {
+            0% {
+                transform: translateX(-100px) translateY(-100px);
+            }
+            25% {
+                transform: translateX(150px) translateY(50px);
+            }
+            50% {
+                transform: translateX(100px) translateY(-200px);
+            }
+            75% {
+                transform: translateX(-150px) translateY(100px);
+            }
+            100% {
+                transform: translateX(200px) translateY(150px);
+            }
+        }
+
+        /* Additional heart and star stickers with different animation timings */
+        .heartSticker:nth-child(2) {
+            animation-duration: 7s;
+        }
+
+        .heartSticker:nth-child(3) {
+            animation-duration: 8s;
+        }
+
+        .heartSticker:nth-child(4) {
+            animation-duration: 9s;
+        }
+
+        .starSticker:nth-child(2) {
+            animation-duration: 12s;
+        }
+
+        .starSticker:nth-child(3) {
+            animation-duration: 14s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday, My Shooting Star!!</h1>
+   <!-- <p>To my sweet and shining star, the one who brings so much joy, laughter, and love into my life — I’m so lucky to have you as my sister! 🌸✨ You light up every room you enter, just like the beautiful April sunshine.🌞💖 You are loved more than words can ever express! Enjoy your special day to the fullest, my little gem! 💎 -->
+
+        Love you to the moon and back, Pookie! 🌙💕</p>
+        <img id="bottom-image" src="foto.jpeg" alt="Bottom Image">
+</body>
+    <!-- Adding moving hearts -->
+    <div class="heartSticker" style="top: 50px; left: 100px;">💖</div>
+    <div class="heartSticker" style="top: 150px; left: 200px;">💞</div>
+    <div class="heartSticker" style="top: 250px; left: 300px;">💗</div>
+    <div class="heartSticker" style="top: 350px; left: 400px;">💕</div>
+    <div class="heartSticker" style="top: 450px; left: 500px;">💘</div>
+    <div class="heartSticker" style="top: 100px; left: 600px;">💝</div>
+
+    <!-- Adding flying stars -->
+    <div class="starSticker" style="top: 100px; left: 50px;">✨</div>
+    <div class="starSticker" style="top: 200px; left: 500px;">✨</div>
+    <div class="starSticker" style="top: 300px; left: 700px;">✨</div>
+    <div class="starSticker" style="top: 400px; left: 300px;">✨</div>
+    <div class="starSticker" style="top: 500px; left: 600px;">✨</div>
+</body>
+</html>
